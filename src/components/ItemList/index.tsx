@@ -5,7 +5,6 @@ import colors from "../../styles/colors";
 
 export interface TodoItem {
   id: number;
-  title: string;
   description: string;
 }
 
@@ -19,8 +18,7 @@ const ItemList: React.FC<ItemListProps> = ({ data }) => {
   return (
     <Container>
       <div>
-        <h2>{data.title}</h2>
-        <p>{data.description}</p>
+        <h2>{data.description}</h2>
       </div>
       <RiDeleteBin5Fill
         onMouseOver={() => setHover(true)}
