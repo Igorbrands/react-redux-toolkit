@@ -1,4 +1,3 @@
-// import produce, { Draft } from "immer";
 import produce from "immer";
 import { Reducer } from "redux";
 import {
@@ -18,9 +17,11 @@ const reducer: Reducer<TasksState> = (
     switch (action.type) {
       case TasksActionTypes.ADD_TASK_IN_LIST_SUCESS:
         draft.list = action.payload;
+        // addTaskInListSucess(draft, action);
         break;
       case TasksActionTypes.REMOVE_TASK_IN_LIST_SUCESS:
         draft.list = action.payload;
+        // removeTaskInListSucess(draft, action);
         break;
       default:
         return state;
@@ -29,17 +30,17 @@ const reducer: Reducer<TasksState> = (
 };
 
 // function addTaskInListSucess(
-//   state: Draft<TasksState>,
+//   draft: Draft<TasksState>,
 //   action: ActionAddTaskInListSucess
 // ) {
-//   state.list = action.payload;
+//   draft.list = action.payload;
 // }
 
 // function removeTaskInListSucess(
-//   state: Draft<TasksState>,
+//   draft: Draft<TasksState>,
 //   action: ActionRemoveTaskInListSucess
 // ) {
-//   state.list = action.payload;
+//   draft.list = action.payload;
 // }
 
 export default reducer;

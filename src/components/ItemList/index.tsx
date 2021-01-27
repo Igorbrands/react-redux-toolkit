@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Container } from "./styles";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import colors from "../../styles/colors";
-import { Task } from "../../store/modules/Tasks/types";
+import { Task } from "../../store/modules/tasks/types";
 import { useDispatch } from "react-redux";
-import { removeTaskInListRequest } from "../../store/modules/Tasks/Tasks.actions";
+import { removeTaskInListRequest } from "../../store/modules/tasks/Tasks.actions";
 
 interface ItemListProps {
   data: Task;
