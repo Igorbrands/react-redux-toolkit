@@ -1,11 +1,11 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Input from "../../components/Input";
-import ItemList from "../../components/ItemList";
-import { Task } from "../../store/modules/tasks/types";
-import { ApplicationState } from "../../store/types";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Input from '../../components/Input';
+import ItemList from '../../components/ItemList';
+import { Task } from '../../store/modules/tasks/types';
+import { ApplicationState } from '../../store/types';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
 const Dashboard: React.FC = () => {
   const data = useSelector<ApplicationState, Task[]>(

@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { Button, Container } from "./styles";
-import { IoIosAdd } from "react-icons/io";
-import colors from "../../styles/colors";
-import { useDispatch } from "react-redux";
-import { addTaskInListRequest } from "../../store/modules/tasks/Tasks.actions";
+import React, { useState } from 'react';
+import { Button, Container } from './styles';
+import { IoIosAdd } from 'react-icons/io';
+import colors from '../../styles/colors';
+import { useDispatch } from 'react-redux';
+import { addTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
 
 const Input: React.FC = () => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
   const dispatch = useDispatch();
 
   function handleAddTask() {
     dispatch(addTaskInListRequest(input));
-    setInput("");
+    setInput('');
   }
 
   return (

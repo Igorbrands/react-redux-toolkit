@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Container } from "./styles";
-import { RiDeleteBin5Fill } from "react-icons/ri";
-import colors from "../../styles/colors";
-import { Task } from "../../store/modules/tasks/types";
-import { useDispatch } from "react-redux";
-import { removeTaskInListRequest } from "../../store/modules/tasks/Tasks.actions";
+import React, { useState } from 'react';
+import { Container } from './styles';
+import { RiDeleteBin5Fill } from 'react-icons/ri';
+import colors from '../../styles/colors';
+import { Task } from '../../store/modules/tasks/types';
+import { useDispatch } from 'react-redux';
+import { removeTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
 
 interface ItemListProps {
   data: Task;
@@ -28,7 +28,7 @@ const ItemList: React.FC<ItemListProps> = ({ data }) => {
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
         size={18}
-        color={hover ? colors.mediumPurple : colors.ghostWhite}
+        color={hover ? colors.mediumPurple : colors.ghostBlack}
       />
     </Container>
   );

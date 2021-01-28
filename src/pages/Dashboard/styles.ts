@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../../styles/colors";
 
 export const Container = styled.div`
-  background-color: ${colors.ghostWhite};
+  background-color: ${colors.ghostBlack};
   height: 100%;
   display: flex;
   flex-direction: column;
