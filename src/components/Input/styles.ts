@@ -18,7 +18,7 @@ export const Container = styled.div`
 
   input {
     background-color: ${colors.mediumPurple};
-    color: ${colors.ghostWhite};
+    color: ${colors.ghostBlack};
     width: 540px;
     padding: 16px;
     border-radius: 4px;
@@ -26,13 +26,13 @@ export const Container = styled.div`
     font-size: 16px;
 
     ::placeholder {
-      color: ${colors.ghostWhite};
+      color: ${colors.ghostBlack};
     }
   }
 `;
 
 export const Button = styled.div`
-  background-color: ${colors.ghostWhite};
+  background-color: ${colors.ghostBlack};
   height: 46px;
   width: 46px;
   border-radius: 23px;

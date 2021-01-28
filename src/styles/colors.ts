@@ -1,9 +1,9 @@
 const colors = {
-  mediumPurple: "#9381FF",
-  maximumBluePurple: "#B8B8FF",
-  ghostWhite: "#F8F7FF",
-  antiqueWhite: "#FFEEDD",
-  unbleachedSilk: "#FFD8BE",
+  mediumPurple: '#9381FF',
+  maximumBluePurple: '#BD93F9',
+  ghostBlack: '#282A36',
+  antiqueBlack: '#282a36',
+  unbleachedSilk: '#FFD8BE',
 };
 
 export default colors;
