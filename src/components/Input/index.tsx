@@ -3,14 +3,15 @@ import { Button, Container } from './styles';
 import { IoIosAdd } from 'react-icons/io';
 import colors from '../../styles/colors';
 import { useDispatch } from 'react-redux';
-import { addTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
+// import { addTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
+import {addTaskInList} from "../../storeToolkit/modules/tasks/Tasks.store"
 
 const Input: React.FC = () => {
   const [input, setInput] = useState('');
   const dispatch = useDispatch();
 
   function handleAddTask() {
-    dispatch(addTaskInListRequest(input));
+    dispatch(addTaskInList(input));
     setInput('');
   }
 

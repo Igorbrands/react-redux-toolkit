@@ -4,7 +4,8 @@ import { RiDeleteBin5Fill } from 'react-icons/ri';
 import colors from '../../styles/colors';
 import { Task } from '../../store/modules/tasks/types';
 import { useDispatch } from 'react-redux';
-import { removeTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
+// import { removeTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
+import { removeTaskInList } from '../../storeToolkit/modules/tasks/Tasks.store';
 
 interface ItemListProps {
   data: Task;
@@ -15,7 +16,7 @@ const ItemList: React.FC<ItemListProps> = ({ data }) => {
   const dispach = useDispatch();
 
   function handleDeleteTask() {
-    dispach(removeTaskInListRequest(data));
+    dispach(removeTaskInList(data));
   }
 
   return (
