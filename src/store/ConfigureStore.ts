@@ -1,18 +1,13 @@
-import { applyMiddleware, createStore } from "redux";
-import createSagaMiddleware from "redux-saga";
-import createRootReducer from "./modules/rootReducer";
-import createRootSaga from "./modules/rootSaga";
-import { composeWithDevTools } from "redux-devtools-extension";
+import { configureStore } from "@reduxjs/toolkit";
+import tasksReducer from "./modules/tasks/Tasks.store";
+import themeReducer from "./modules/theme/Theme.store";
 
-const sagaMiddleware = createSagaMiddleware();
+const store = configureStore({
+  reducer: {
+    tasks: tasksReducer,
+    theme: themeReducer,
+  },
+});
 
-const middleware = [sagaMiddleware];
-
-const store = createStore(
-  createRootReducer,
-  composeWithDevTools(applyMiddleware(...middleware))
-);
-
-sagaMiddleware.run(createRootSaga);
-
+export type RootState = ReturnType<typeof store.getState>;
 export default store;

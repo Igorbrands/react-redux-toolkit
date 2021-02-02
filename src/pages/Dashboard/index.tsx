@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 import Input from "../../components/Input";
 import ItemList from "../../components/ItemList";
 import { Task } from "../../store/modules/tasks/types";
-// import { ApplicationState } from '../../store/types';
-import { RootState } from "../../storeToolkit/configureStore";
+import { RootState } from "../../store/configureStore";
 
 import { Container } from "./styles";
 

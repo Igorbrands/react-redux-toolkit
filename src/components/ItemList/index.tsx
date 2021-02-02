@@ -4,8 +4,7 @@ import { RiDeleteBin5Fill } from 'react-icons/ri';
 import colors from '../../styles/colors';
 import { Task } from '../../store/modules/tasks/types';
 import { useDispatch } from 'react-redux';
-// import { removeTaskInListRequest } from '../../store/modules/tasks/Tasks.actions';
-import { removeTaskInList } from '../../storeToolkit/modules/tasks/Tasks.store';
+import { removeTaskInList } from '../../store/modules/tasks/Tasks.store';
 
 interface ItemListProps {
   data: Task;
